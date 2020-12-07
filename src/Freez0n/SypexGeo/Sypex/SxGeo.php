@@ -542,7 +542,7 @@ class SxGeo implements SypexGeoContract {
                     $v = unpack('S', $val);
                     break;
                 case 'm':
-                    $v = unpack('l', $val . (ord($val{2}) >> 7 ? "\xff" : "\0"));
+                    $v = unpack('l', $val . (ord($val[2]) >> 7 ? "\xff" : "\0"));
                     break;
                 case 'M':
                     $v = unpack('L', $val . "\0");
