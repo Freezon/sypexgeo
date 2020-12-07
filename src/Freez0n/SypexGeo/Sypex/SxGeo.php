@@ -496,7 +496,7 @@ class SxGeo implements SypexGeoContract {
         $pos = 0;
         foreach($pack AS $p){
             list($type, $name) = explode(':', $p);
-            $type0 = $type{0};
+            $type0 = $type[0];
             if($empty){
                 $unpacked[$name] = $type0 == 'b' || $type0 == 'c' ? '' : 0;
                 continue;
@@ -561,10 +561,10 @@ class SxGeo implements SypexGeoContract {
                     break;
 
                 case 'n':
-                    $v = current(unpack('s', $val)) / pow(10, $type{1});
+                    $v = current(unpack('s', $val)) / pow(10, $type[1]);
                     break;
                 case 'N':
-                    $v = current(unpack('l', $val)) / pow(10, $type{1});
+                    $v = current(unpack('l', $val)) / pow(10, $type[1]);
                     break;
 
                 case 'c':
