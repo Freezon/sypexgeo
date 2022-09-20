@@ -1,19 +1,19 @@
 {
     "name": "freezon/sypexgeo",
     "description": "Supports GeoIP services (sypexgeo.net).",
-    "keywords": ["laravel", "laravel 6+", "geoip", "location", "geolocation"],
-	"license": "BSD-2-Clause",
+    "keywords": ["laravel", "laravel 9", "geoip", "location", "geolocation"],
+    "license": "BSD-2-Clause",
     "authors": [],
     "require": {
-        "php": ">=7.2",
-        "laravel/framework": "5.8.* || 6.* || 7.* || 8.*",
+        "php": ">=8.0",
+        "laravel/framework": "9.*",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-simplexml": "*"
     },
     "autoload": {
         "psr-4": {
-          "Freez0n\\SypexGeo\\": "src/Freez0n/SypexGeo/"
+            "Freez0n\\SypexGeo\\": "src/Freez0n/SypexGeo/"
         }
     },
     "extra": {
