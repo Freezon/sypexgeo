@@ -5,8 +5,8 @@
     "license": "BSD-2-Clause",
     "authors": [],
     "require": {
-        "php": ">=8.0",
-        "laravel/framework": "9.*",
+        "php": ">=8.1",
+        "laravel/framework": ">=10.0",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-simplexml": "*"
